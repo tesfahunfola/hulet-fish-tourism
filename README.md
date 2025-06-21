@@ -1,5 +1,7 @@
 # Hulet Fish Tourism
 
+[Live Site Hosted on Vercel](https://v0-huletfishtourism.vercel.app/)
+
 Welcome to the Hulet Fish Tourism project! This is a modern, full-featured tourism web application built with Next.js and TypeScript, designed to showcase Ethiopian heritage, provide booking systems, and offer interactive experiences for tourists, guides, and administrators.
 
 ## Features
