@@ -2,6 +2,27 @@
 
 A scalable Node.js backend for the Hulet Fish community-based tourism platform, built with Express.js and MongoDB.
 
+---
+
+## 🖥️ Technologies Used
+
+- **Node.js** (v18+)
+- **Express.js** (API framework)
+- **MongoDB** (database)
+- **Mongoose** (ODM for MongoDB)
+- **JWT** (authentication)
+- **bcrypt** (password hashing)
+- **Stripe** (payment integration)
+- **Cloudinary** (image upload)
+- **Nodemailer** (email notifications)
+- **Helmet** (security headers)
+- **CORS** (cross-origin resource sharing)
+- **Rate Limiting** (API protection)
+- **Jest** (testing)
+- **Nodemon** (development)
+
+---
+
 ## 🚀 Features
 
 - **Authentication & Authorization**: JWT-based auth with role-based access control
