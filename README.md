@@ -1,6 +1,43 @@
 # Hulet Fish Tourism Platform
 
-This project now includes both the frontend (Next.js) and backend (Node.js/Express) for the Hulet Fish community-based tourism platform.
+A modern, scalable, and community-driven platform for booking and managing authentic Ethiopian fish tourism experiences. This monorepo includes both the frontend (Next.js) and backend (Node.js/Express) applications, and is designed to deliver a seamless experience for tourists, hosts, guides, and administrators.
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Monorepo Structure](#monorepo-structure)
+- [Getting Started](#getting-started)
+  - [Frontend Setup](#frontend-setup)
+  - [Backend Setup](#backend-setup)
+- [Project Structure](#project-structure)
+- [API Overview](#api-overview)
+- [User Roles](#user-roles)
+- [Security](#security)
+- [Development & Contribution](#development--contribution)
+- [Deployment](#deployment)
+- [Support](#support)
+- [License](#license)
+
+---
+
+## Features
+
+- Full-stack monorepo with shared codebase
+- Next.js frontend with modern UI/UX
+- Node.js/Express backend with RESTful API
+- MongoDB with Mongoose ODM
+- JWT-based authentication and robust role management
+- Tour creation, management, and booking
+- Stripe payment integration
+- Cloudinary image uploads
+- Reviews and rating system
+- Automated email notifications
+- Security best practices (Helmet, CORS, rate limiting)
+- Comprehensive API documentation
+
+---
 
 ## Monorepo Structure
 
@@ -14,41 +51,162 @@ public/      # Static assets
 styles/      # Global styles
 ```
 
+---
+
 ## Getting Started
 
-### Frontend (Next.js)
+### Frontend Setup
 
-1. Navigate to the root directory.
-2. Install dependencies:
+1. **Navigate to the project root**
+2. **Install dependencies**
    ```bash
    pnpm install
    ```
-3. Run the development server:
+3. **Run the development server**
    ```bash
    pnpm dev
    ```
+   The frontend will start at `http://localhost:3000`.
 
-### Backend (Node.js/Express)
+### Backend Setup
 
-1. Navigate to the `backend` directory:
+1. **Navigate to the backend directory**
    ```bash
    cd backend
    ```
-2. Install dependencies:
+2. **Install dependencies**
    ```bash
    npm install
    ```
-3. Set up your environment variables (see `backend/.env.example`).
-4. Start the backend server:
+3. **Copy and configure environment variables**
    ```bash
-   npm start
+   cp .env.example .env
+   # Edit .env with your MongoDB URI, JWT secret, etc.
    ```
-
-## Features
-- Full-stack monorepo: Next.js frontend + Express backend
-- User authentication, booking, payments, reviews, and more
-- See `backend/README.md` for backend API details
+4. **Seed the database with sample data (optional)**
+   ```bash
+   npm run seed
+   ```
+5. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+   The API will be available at `http://localhost:5000`.
 
 ---
 
-For more information, see the documentation in each subfolder.
+## Project Structure
+
+### Backend
+
+```
+backend/
+├── models/           # Database models (User, Tour, Booking, Review)
+├── routes/           # API route handlers
+├── middleware/       # Custom middleware (auth, error handling)
+├── scripts/          # Database seeding and utilities
+├── uploads/          # File upload directory
+├── .env.example      # Environment variables template
+├── server.js         # Main application entry point
+└── package.json      # Dependencies and scripts
+```
+
+---
+
+## API Overview
+
+- **Authentication**
+  - `POST /api/auth/register` — Register a new user
+  - `POST /api/auth/login` — Login
+  - `POST /api/auth/google` — Google OAuth login
+  - `GET /api/auth/me` — Current user profile
+  - `POST /api/auth/logout` — Logout
+
+- **Tours**
+  - `GET /api/tours` — List all tours (with filtering)
+  - `GET /api/tours/featured` — Featured tours
+  - `GET /api/tours/:id` — Single tour
+  - `POST /api/tours` — Create new tour (Host/Admin)
+  - `PUT /api/tours/:id` — Update tour (Host/Admin)
+  - `DELETE /api/tours/:id` — Delete tour (Host/Admin)
+
+- **Users**
+  - `GET /api/users/profile` — Get profile
+  - `PUT /api/users/profile` — Update profile
+  - `GET /api/users/hosts` — List hosts
+
+- **Bookings**
+  - `POST /api/bookings` — Create booking
+  - `GET /api/bookings` — User bookings
+  - `GET /api/bookings/:id` — Booking details
+  - `PUT /api/bookings/:id/status` — Update status
+
+- **Reviews**
+  - `POST /api/reviews` — Create review
+  - `GET /api/reviews/tour/:tourId` — Tour reviews
+  - `PUT /api/reviews/:id` — Update review
+  - `DELETE /api/reviews/:id` — Delete review
+
+See the `backend/README.md` for full API documentation.
+
+---
+
+## User Roles
+
+- **Tourist:** Browse/book tours, leave reviews
+- **Host:** Create/manage tours, handle bookings
+- **Guide:** Assist with tours and bookings
+- **Admin:** Full system access and management
+
+---
+
+## Security
+
+- **Helmet:** HTTP security headers
+- **CORS:** Configurable cross-origin requests
+- **Rate Limiting:** Protect API from abuse
+- **Input Validation:** Sanitize and validate all input
+- **Password Hashing:** bcrypt encryption
+- **JWT Authentication:** Secure token-based auth
+
+---
+
+## Development & Contribution
+
+1. Fork the repository
+2. Create a feature branch
+3. Implement your changes (with tests if applicable)
+4. Submit a pull request
+
+We welcome contributions from the community! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+---
+
+## Deployment
+
+### Environment Variables
+
+Copy `.env.example` files and configure for your environment (development or production).
+
+### Supported Platforms
+
+- **Heroku:** Recommended for quick deployments with MongoDB Atlas
+- **DigitalOcean:** App Platform or Droplets
+- **AWS:** EC2 or Elastic Beanstalk
+- **Vercel:** For frontend/serverless functions
+
+---
+
+## Support
+
+- Email: [support@huletfish.com](mailto:support@huletfish.com)
+- API Documentation: [API Docs](https://api.huletfish.com/docs)
+- Issues: [GitHub Issues](https://github.com/hulet-fish-tourism/issues)
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
