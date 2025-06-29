@@ -1,6 +1,6 @@
 # Hulet Fish Tourism Platform
 
-A modern, scalable, and community-driven platform for booking and managing authentic Ethiopian fish tourism experiences. This monorepo includes both the frontend (Next.js) and backend (Node.js/Express) applications, and is designed to deliver a seamless experience for tourists, hosts, guides, and administrators.
+A modern, scalable, and community-driven platform for booking and managing authentic Ethiopian  tourism experiences. This monorepo includes both the frontend (Next.js) and backend (Node.js/Express) applications, and is designed to deliver a seamless experience for tourists, hosts, guides, and administrators.
 
 ---
 
