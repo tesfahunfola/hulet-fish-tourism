@@ -1,66 +1,54 @@
-# Hulet Fish Tourism
+# Hulet Fish Tourism Platform
 
-[Live Site Hosted on Vercel](https://v0-huletfishtourism.vercel.app/)
+This project now includes both the frontend (Next.js) and backend (Node.js/Express) for the Hulet Fish community-based tourism platform.
 
-Welcome to the Hulet Fish Tourism project! This is a modern, full-featured tourism web application built with Next.js and TypeScript, designed to showcase Ethiopian heritage, provide booking systems, and offer interactive experiences for tourists, guides, and administrators.
+## Monorepo Structure
 
-## Features
-- Interactive 3D Ethiopian heritage showcase
-- Advanced booking system and booking simulator
-- Multi-language support and directionality
-- Currency selector
-- Host application form
-- Photo and image galleries
-- VR tour modal
-- Dashboard for admin, guide, and tourist roles
-- Modern UI components (cards, carousels, charts, etc.)
-- Mock functionality for user registration, reviews, and tour creation
-- Theming and dark mode support
-
-## Technologies Used
-- Next.js
-- TypeScript
-- Tailwind CSS
-- React
-- Modern UI component library
+```
+app/         # Next.js frontend application
+backend/     # Node.js/Express backend API
+components/  # Shared React components
+hooks/       # Shared React hooks
+lib/         # Shared libraries and utilities
+public/      # Static assets
+styles/      # Global styles
+```
 
 ## Getting Started
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/tesfahunfola/hulet-fish-tourisim.git
-   cd hulet-fish-tourisim
-   ```
-2. **Install dependencies:**
+### Frontend (Next.js)
+
+1. Navigate to the root directory.
+2. Install dependencies:
    ```bash
    pnpm install
-   # or
-   npm install
-   # or
-   yarn install
    ```
-3. **Run the development server:**
+3. Run the development server:
    ```bash
    pnpm dev
-   # or
-   npm run dev
-   # or
-   yarn dev
    ```
-4. **Open your browser:**
-   Visit [http://localhost:3000](http://localhost:3000) to view the app.
 
-## Project Structure
-- `app/` — Main application pages and routes
-- `components/` — Reusable UI and feature components
-- `hooks/` — Custom React hooks
-- `lib/` — Utility functions and mock data
-- `public/` — Static assets and images
-- `styles/` — Global styles
+### Backend (Node.js/Express)
 
-## Author
-**tesfahun fola**
-- GitHub: [tesfahunfola](https://github.com/tesfahunfola)
+1. Navigate to the `backend` directory:
+   ```bash
+   cd backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up your environment variables (see `backend/.env.example`).
+4. Start the backend server:
+   ```bash
+   npm start
+   ```
 
-## License
-This project is licensed under the MIT License.
+## Features
+- Full-stack monorepo: Next.js frontend + Express backend
+- User authentication, booking, payments, reviews, and more
+- See `backend/README.md` for backend API details
+
+---
+
+For more information, see the documentation in each subfolder.
