@@ -207,7 +207,7 @@ Copy `.env.example` files and configure for your environment (development or pro
 
 ## Support
 
-- Email: [support@huletfish.com](mailto:support@huletfish.com)
+- Email: [t.zanafola@alustudent.com](mailto:t.zanafola@alustudent.com)
 - API Documentation: [API Docs](https://api.huletfish.com/docs)
 - Issues: [GitHub Issues](https://github.com/hulet-fish-tourism/issues)
 
