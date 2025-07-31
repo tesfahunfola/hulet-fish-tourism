@@ -34,6 +34,10 @@ export default function SiteHeader() {
                 href={item === "host" ? "#become-host" : `#${item.toLowerCase()}`}
                 className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors relative group text-sm font-medium"
                 whileHover={{ y: -1 }}
+                onClick={(e) => {
+                    e.preventDefault()
+                    window.location.href = "http://localhost:3000/api/auth/fayda"
+                  }}
               >
                 {item === "host" ? "Become a Host" : item === "experiences" ? "Experiences" : t(`nav.${item}`)}
                 <motion.div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent group-hover:w-full transition-all duration-300" />
@@ -83,6 +87,10 @@ export default function SiteHeader() {
                   href={item === "host" ? "#become-host" : `#${item.toLowerCase()}`}
                   className="block text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors py-2 text-sm"
                   onClick={() => setIsMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    window.location.href = "http://localhost:3000/api/auth/fayda"
+                  }}
                 >
                   {item === "host" ? "Become a Host" : item === "experiences" ? "Experiences" : t(`nav.${item}`)}
                 </a>
