@@ -49,7 +49,7 @@ Frontend:
 - lucide-react (icons)
 - sonner / toast patterns for notifications
 
-Optional / Recommended backend (not shipped in this frontend-only repo):
+ backend:
 - Node.js + Express or NestJS
 - PostgreSQL (Prisma) or MongoDB
 - Redis (cache, sessions)
