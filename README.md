@@ -99,14 +99,14 @@ Open the Local URL printed by Next in your terminal (e.g., http://localhost:3000
 
 Screenshots:
 
--— Homepage hero and nav
--   <img width="1362" height="685" alt="homepage" src="https://github.com/user-attachments/assets/83ca8fe8-f7c3-46ac-be71-276b0e07bb41" />
+- Homepage hero and nav
+  <img width="1362" height="685" alt="homepage" src="https://github.com/user-attachments/assets/83ca8fe8-f7c3-46ac-be71-276b0e07bb41" />
  
-- — Destinations section
--   <img width="1359" height="679" alt="destinations" src="https://github.com/user-attachments/assets/5666aeb3-6e35-44ee-8299-3f772dbeb17d" />
+-  Destinations section
+  <img width="1359" height="679" alt="destinations" src="https://github.com/user-attachments/assets/5666aeb3-6e35-44ee-8299-3f772dbeb17d" />
    
-- — Admin dashboard (analytics)
--    <img width="1357" height="673" alt="dashboardAdmin" src="https://github.com/user-attachments/assets/7f1af9a2-7e2b-420b-8f2d-5704572e0d7f" />
+-  Admin dashboard (analytics)
+   <img width="1357" height="673" alt="dashboardAdmin" src="https://github.com/user-attachments/assets/7f1af9a2-7e2b-420b-8f2d-5704572e0d7f" />
     
 
 ---
