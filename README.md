@@ -33,11 +33,9 @@ This project is a full-featured frontend for a tourism booking platform focused 
 The frontend is implemented using Next.js App Router and TypeScript for predictable builds and strong editor support.
 
 ## Repository
-Replace the placeholder below with the actual GitHub repo URL for this project:
 
-Repository: https://github.com/<YOUR-ORG>/<YOUR-REPO>
 
-(You should update the above line with the real repository link before sharing.)
+Repository: https://github.com/tesfahunfola/hulet-fish-tourism
 
 ---
 
@@ -96,19 +94,17 @@ Open the Local URL printed by Next in your terminal (e.g., http://localhost:3000
 
 ---
 
-## Designs & Screenshots
-Include links to your design assets and illustrative screenshots here. Replace the placeholders below with real links/files:
+## Screenshots
 
-- Figma mockups: https://www.figma.com/file/<YOUR-FIGMA-PATH>
-- Circuit / architecture diagram: docs/architecture-diagram.png (or a link to Miro/diagrams.net)
 
-Screenshots (add images to `public/screenshots/` and reference them):
+Screenshots:
 
-- `public/screenshots/homepage.png` — Homepage hero and nav
-- `public/screenshots/destinations.png` — Destinations section
-- `public/screenshots/dashboard-admin.png` — Admin dashboard (analytics)
-
-Add these images to the `public/screenshots` folder and reference them here for the repo README to display them.
+- ` <img width="1362" height="685" alt="homepage" src="https://github.com/user-attachments/assets/83ca8fe8-f7c3-46ac-be71-276b0e07bb41" />
+ ` — Homepage hero and nav
+- ` <img width="1359" height="679" alt="destinations" src="https://github.com/user-attachments/assets/5666aeb3-6e35-44ee-8299-3f772dbeb17d" />
+   ` — Destinations section
+- `  <img width="1357" height="673" alt="dashboardAdmin" src="https://github.com/user-attachments/assets/7f1af9a2-7e2b-420b-8f2d-5704572e0d7f" />
+    ` — Admin dashboard (analytics)
 
 ---
 
@@ -174,14 +170,3 @@ Or open an issue on the repository.
 This project is licensed under the MIT License.
 
 ---
-
-*Replace placeholders (repository URL, Figma link, screenshots) with your actual links before sharing this README.*
-
-# Hulet Fish Tourism Platform
-
-A modern, scalable, and community-driven platform for booking and managing authentic Ethiopian  tourism experiences. This monorepo includes both the frontend (Next.js) and backend (Node.js/Express) applications, and is designed to deliver a seamless experience for tourists, hosts, guides, and administrators.
-
-
-   **Live Preview**:  
-   You can view the deployed frontend at [https://v0-huletfishtourism.vercel.app/](https://v0-huletfishtourism.vercel.app/)
-
