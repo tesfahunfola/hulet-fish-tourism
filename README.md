@@ -50,8 +50,8 @@ Frontend:
 - sonner / toast patterns for notifications
 
  backend:
-- Node.js + Express or NestJS
-- PostgreSQL (Prisma) or MongoDB
+- Node.js and NestJS
+- MongoDB
 - Redis (cache, sessions)
 - S3-compatible object storage (images)
 
